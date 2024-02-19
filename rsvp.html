@@ -11,18 +11,30 @@
         <h1>RSVP for My Graduation Dinner</h1>
     </header>
     <main>
-        <form action="https://formspree.io/YOUREMAIL" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" required>
-            <label for="attending">Attending:</label>
-            <select name="attending" id="attending">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-            <input type="submit" value="Submit RSVP">
-        </form>
+        <form action="<form action="https://formspree.io/f/xeqygnwy?_next=https://ericcVa.github.io/M-Graduation/thank-you.html" method="POST">
+" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="attending">Attending:</label>
+    <select name="attending" id="attending" required>
+        <option value="">Please Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="0" required>
+    
+    <label for="message">Message (Optional):</label>
+    <textarea id="message" name="message"></textarea>
+    
+    <input type="submit" value="Submit RSVP">
+</form>
+
     </main>
 </body>
 </html>
