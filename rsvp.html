@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP - Graduation Dinner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RSVP for My Graduation Dinner</h1>
+    </header>
+    <main>
+        <form action="https://formspree.io/YOUREMAIL" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+            <label for="attending">Attending:</label>
+            <select name="attending" id="attending">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <input type="submit" value="Submit RSVP">
+        </form>
+    </main>
+</body>
+</html>
