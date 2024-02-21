@@ -122,3 +122,27 @@ p {
     margin-bottom: 20px;
     font-size: 18px; /* Larger font size for readability */
 }
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust the space between photos */
+}
+
+.photo {
+    flex: 1 1 200px; /* Adjust the basis to control photo size */
+    max-width: calc(33.333% - 10px); /* Three photos per row minus gap, adjust as needed */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Adds a shadow for depth */
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures no extra space below the image */
+    border-radius: 4px; /* Optional: Rounds the corners of the images */
+}
+.photo img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
