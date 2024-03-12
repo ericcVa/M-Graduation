@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSVP - Graduation Dinner</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rsvp-style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <h1>RSVP for My Graduation Dinner</h1>
+		  <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="directions.html">Directions</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+         </nav>
     </header>
     <main>
         <form action="https://formspree.io/f/xeqygnwy"method="POST">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
     
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <label for="phone">Phone Number:</label>
+	<input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+
     
     <label for="attending">Attending:</label>
     <select name="attending" id="attending" required>

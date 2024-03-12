@@ -1,0 +1,88 @@
+body, h1 {
+    margin-top: 0; /* Ensures no margin at the top of the page and the h1 element */
+}
+* {
+    margin: 0; /* Removes default margins from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Changes the box model to include padding and border in element's width/height */
+}
+header h1 {
+    font-family: 'Great Vibes', cursive; /* Applies the Great Vibes font */
+    color: #3b2f1a; /* You can adjust this color as needed */
+    font-size: 2.9em; /* Adjust the font size as needed */
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+header {
+    background-color: #fcfbd7; /* Sets a slightly different shade of grey for the header background */
+    padding: 20px; /* Adds padding inside the header */
+    text-align: center; /* Centers the text inside the header */
+    color: #444; /* Makes header text a bit darker */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #141414; /* Match this color with the one from style.css */
+    text-decoration: none; /* Removes the underline from links */
+    font-weight: bold; /* Optional: Makes the navigation menu text bold */
+}
+
+/* Additional styles for hover effects or active state if needed */
+nav ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+nav {
+    margin-bottom: 20px; /* Adjusts the space between the navigation and the content below */
+}
+
+.invitation-text {
+    text-align: center; /* Centers the text for the specific paragraph */
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the default font family */
+    background-color: #fcfbd7; /* Sets a light grey background color for the page */
+    color: #333; /* Sets the default text color to a dark grey */
+    line-height: 1.6; /* Sets the default line height */
+}
+
+.google-map iframe, .location-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .images-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .location-image img, .google-map iframe {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .google-map iframe {
+        height: 450px;
+        border: 0;
+        margin-top: 20px;
+    }
+}
