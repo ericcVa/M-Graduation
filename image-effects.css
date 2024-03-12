@@ -16,6 +16,7 @@
     align-items: stretch;
     gap: 10px; /* Adjust gap as needed */
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 
