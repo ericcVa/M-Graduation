@@ -12,11 +12,10 @@
 }
 
 .featured-images {
-    display: flex;
-    align-items: stretch;
-    gap: 10px; /* Adjust gap as needed */
-	align-items: center;
-	flex-wrap: wrap;
+   display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 
@@ -24,7 +23,7 @@
     flex: 0 1 55%; /* Flex-grow, flex-shrink, flex-basis */
     height: auto;
     object-fit: cover;
-	width: 60%
+	width: 65%
 }
 
 
@@ -36,7 +35,7 @@
 }
 
 .small-images-grid img {
-    width: 62%;
+    width: 69%;
     height: auto;
     object-fit: cover;
 }
