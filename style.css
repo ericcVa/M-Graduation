@@ -1,51 +1,64 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Removes default margins from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    box-sizing: border-box; /* Changes the box model to include padding and border in element's width/height */
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated Font */
-    background-color: #f5f5f5; /* Light grey background for a subtle, professional look */
-    color: #333; /* Darker text for better readability */
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the default font family */
+    background-color: #fcfbd7; /* Sets a light grey background color for the page */
+    color: #333; /* Sets the default text color to a dark grey */
+    line-height: 1.6; /* Sets the default line height */
 }
 
 header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-    color: #444; /* Slightly darker shade for header text */
+    background-color: #fcfbd7; /* Sets a slightly different shade of grey for the header background */
+    padding: 20px; /* Adds padding inside the header */
+    text-align: center; /* Centers the text inside the header */
+    color: #444; /* Makes header text a bit darker */
+}
+header h1 {
+    font-family: 'Great Vibes', cursive; /* Applies the Great Vibes font */
+    color: #3b2f1a; /* You can adjust this color as needed */
+    font-size: 2.9em; /* Adjust the font size as needed */
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Removes bullet points from list */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Displays list items in a row */
+    justify-content: center; /* Centers list items horizontally */
+    gap: 20px; /* Adds space between list items */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline; /* Displays list items inline */
+    margin-right: 10px; /* Adds right margin to list items */
+}
+
+nav ul li a {
+    color: #141414;
 }
 
 main {
-    padding: 20px;
-    text-align: center; /* Center align the main content for a better look on wide screens */
+    padding: 20px; /* Adds padding inside the main content area */
+    text-align: center; /* Centers text inside the main content area */
 }
 
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff; /* White background for the form to stand out */
+    max-width: 600px; /* Sets maximum width for forms */
+    margin: 20px auto; /* Centers forms horizontally and adds vertical margin */
+    padding: 20px; /* Adds padding inside forms */
+    border: 1px solid #ccc; /* Adds a border around forms */
+    border-radius: 5px; /* Rounds the corners of forms */
+    background-color: #fff; /* Sets a white background color for forms */
 }
 
 label {
-    display: block;
-    margin: 10px 0 5px;
+    display: block; /* Displays labels as block elements */
+    margin: 10px 0 5px; /* Adds margin around labels */
 }
 
 input[type="text"],
@@ -53,96 +66,68 @@ input[type="email"],
 input[type="number"],
 select,
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%; /* Makes form inputs take full width */
+    padding: 8px; /* Adds padding inside form inputs */
+    margin-bottom: 20px; /* Adds margin below form inputs */
+    border: 1px solid #ccc; /* Adds a border around form inputs */
+    border-radius: 4px; /* Rounds the corners of form inputs */
 }
 
 input[type="submit"] {
-    background-color: #4CAF50; /* Consider a more subtle color for a mature look */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background-color: #4CAF50; /* Sets background color for submit buttons */
+    color: white; /* Sets text color for submit buttons */
+    padding: 10px 20px; /* Adds padding inside submit buttons */
+    border: none; /* Removes border from submit buttons */
+    border-radius: 4px; /* Rounds the corners of submit buttons */
+    cursor: pointer; /* Changes cursor to pointer when hovering over submit buttons */
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Changes background color of submit buttons on hover */
 }
 
-/* Additional Styles for a Mature Look */
 .google-map iframe, .location-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Rounded corners for images and maps */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
-    margin-bottom: 20px;
+    width: 100%; /* Makes images and iframes take full width */
+    height: auto; /* Sets height automatically based on aspect ratio */
+    border-radius: 8px; /* Rounds the corners of images and iframes */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a shadow for depth */
+    margin-bottom: 20px; /* Adds margin below images and iframes */
 }
 
-/* Responsive design for side-by-side images at larger screens */
+/* Responsive styling for larger screens */
 @media (min-width: 768px) {
-.images-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjusts space between images */
+    .images-container {
+        display: flex; /* Displays images side by side */
+        justify-content: center; /* Centers images horizontally */
+        gap: 20px; /* Adds space between images */
+    }
+
+    .location-image img, .google-map iframe {
+        width: auto; /* Auto-adjusts width */
+        max-width: 100%; /* Ensures images/iframe do not exceed their container's width */
+        height: auto; /* Auto-adjusts height based on aspect ratio */
+        display: block; /* Ensures images/iframe are block-level elements */
+        margin-bottom: 20px; /* Adds margin below images/iframe */
+    }
+
+    .google-map iframe {
+        height: 450px; /* Sets a fixed height for iframes */
+        border: 0; /* Removes border from iframes */
+        margin-top: 20px; /* Adds margin above iframes */
+    }
 }
 
-.location-image img {
-    width: auto;
-    max-width: 100%; /* Ensures images are responsive and fit within their containers */
-    height: auto; /* Keeps the image aspect ratio */
-    display: block;
-    margin-bottom: 20px; /* Space below images */
-}
-
-.google-map iframe {
-    width: 100%;
-    height: 450px; /* Adjust height as necessary */
-    border: 0;
-    margin-top: 20px; /* Space above the map */
-}
-
-}
-
-/* Typography and Color Enhancements */
 a {
-    color: #0066cc;
-    text-decoration: none;
-    font-weight: bold;
+    color: #0066cc; /* Sets color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes link text bold */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Adds underline to links on hover */
 }
 
 p {
-    margin-bottom: 20px;
-    font-size: 18px; /* Larger font size for readability */
-}
-
-.photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Adjust the space between photos */
-}
-
-.photo {
-    flex: 1 1 200px; /* Adjust the basis to control photo size */
-    max-width: calc(33.333% - 10px); /* Three photos per row minus gap, adjust as needed */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Adds a shadow for depth */
-}
-
-.photo img {
-    width: 100%;
-    height: auto;
-    display: block; /* Ensures no extra space below the image */
-    border-radius: 4px; /* Optional: Rounds the corners of the images */
-}
-.photo img:hover {
-    transform: scale(1.05); /* Slightly enlarge images on hover */
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    margin-bottom: 20px; /* Adds margin below paragraphs */
+    font-size: 18px; /* Sets font size for paragraphs */
 }

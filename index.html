@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graduation Dinner Invitation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image-effects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,41 +21,28 @@
         </nav>
     </header>
     <main>
-        <p>Welcome to my graduation dinner celebration! I am excited to share this moment with you.</p>
-        <section class="photo-gallery">
-            <!-- Example for one photo, repeat this structure for each photo -->
-            <div class="photo">
-                <img src="IMAGES/IMG_2111.jpg" alt="Photo Description">
-            </div>
-			<div class="photo">
-                <img src="IMAGES/IMG_2115.jpg" alt="Photo Description">
-            </div>
-			<div class="photo">
-                <img src="IMAGES/IMG_9614.jpg" alt="Photo Description">
-            </div>
-			<div class="photo">
-                <img src="IMAGES/IMG_1050.jpg" alt="Photo Description">
-            </div>
-			<div class="photo">
-                <img src="IMAGES/IMG_1063.jpg" alt="Photo Description">
-				</div>
-			<div class="photo">
-                <img src="IMAGES/IMG_R_0002.jpg" alt="Photo Description">
-				</div>
-			<div class="photo">
-                <img src="IMAGES/IMG_1126.jpg"alt="Photo Description">
-				</div>
-			<div class="photo">
-                <img src="IMAGES/IMG_8477.jpg" alt="Photo Description">
-            </div>
-			<div class="photo">
-                <img src="IMAGES/IMG_1145.jpg" alt="Photo Description">
-            </div>
-			<div class="photo">
-                <img src="IMAGES/IMG_8492.jpg"alt="Photo Description">
-				</div>
-            <!-- Repeat the div.photo for each of your photos -->
-        </section>
+        <div class="featured-layout">
+            <div class="featured-images">
+                <img src="C:\Users\ericv\OneDrive\Desktop\M-Graduation\IMAGES\11.jpg" alt="Big Image" class="big-image" id="bigImage">
+                <div class="small-images-grid">
+                    <img src="C:\Users\ericv\OneDrive\Desktop\M-Graduation\IMAGES\21.jpg" alt="Small Image 1" onclick="swapImage(this)">
+                    <img src="C:\Users\ericv\OneDrive\Desktop\M-Graduation\IMAGES\1.jpg" alt="Small Image 2" onclick="swapImage(this)">
+                    <img src="C:\Users\ericv\OneDrive\Desktop\M-Graduation\IMAGES\15.jpg" alt="Small Image 3" onclick="swapImage(this)">
+                </div>
+                        <div class="text-container"> <!-- Wrapping texts in a container -->
+            <p class="welcome-text">You're invited to join us on May the 11th to celebrate the graduation of Madison Roman</p>
+            <p class="event-details">6 pm, @615 E. Trenton Rd., Edinburg, TX 78539</p>
+        </div>
+
+        </div>
     </main>
+	    <script>
+        function swapImage(smallImg) {
+            const bigImg = document.getElementById('bigImage');
+            let tempSrc = bigImg.src;
+            bigImg.src = smallImg.src;
+            smallImg.src = tempSrc;
+        }
+    </script>
 </body>
 </html>
