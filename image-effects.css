@@ -47,6 +47,7 @@
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     text-align: center;
 	font-family: 'Great Vibes', cursive;
+	margin-top: 20px; /* Adds space above the text */
 }
 
 .event-details {
