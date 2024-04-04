@@ -1,5 +1,5 @@
 body {
-    background-color: #fffbe6; /* Sets the page background color */
+    background-color: #edec; /* Sets the page background color */
 }
 
 header h1 {
@@ -34,7 +34,7 @@ form {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #edec;
+    background-color: #ffffc;
 }
 
 label {
