@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #fcfbd7; /* Sets a slightly different shade of grey for the header background */
+    background-color: #fffbe6; /* Sets a slightly different shade of grey for the header background */
     padding: 20px; /* Adds padding inside the header */
     text-align: center; /* Centers the text inside the header */
     color: #444; /* Makes header text a bit darker */
