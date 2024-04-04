@@ -7,7 +7,7 @@
 	border: 2px solid #A5A5A5; /* Elegant grey border */
     padding: 20px; /* Spacing inside the border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a slight depth effect */
-    background-color: #f1f2f0; /* Optional: Adds a white background */
+    background-color: #fffffc; /* Optional: Adds a white background */
     border-radius: 10px; /* Slightly rounded corners for a softer look */
 }
 
