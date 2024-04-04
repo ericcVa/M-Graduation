@@ -63,7 +63,7 @@ main {
     border: 2px solid #D3D3D3; /* Light grey border for a subtle look */
     border-radius: 10px; /* Slightly rounded corners for a soft appearance */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    background-color: #f1f2f0; /* Light background to match the rest of the theme */
+    background-color: #fffffc; /* Light background to match the rest of the theme */
 }
 
 
