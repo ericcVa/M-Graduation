@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets the default font family */
-    background-color: #fffbe6; /* Sets a light grey background color for the page */
+    background-color: #edec; /* Sets a light grey background color for the page */
     color: #333; /* Sets the default text color to a dark grey */
     line-height: 1.6; /* Sets the default line height */
 }
 
 header {
-    background-color: #fffbe6; /* Sets a slightly different shade of grey for the header background */
+    background-color: #edec; /* Sets a slightly different shade of grey for the header background */
     padding: 20px; /* Adds padding inside the header */
     text-align: center; /* Centers the text inside the header */
     color: #444; /* Makes header text a bit darker */
